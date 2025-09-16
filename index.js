@@ -90,3 +90,16 @@ const doubleResult = double(add);
 console.log("🚀 ~ doubleResult:", doubleResult); // add(33) * 2 = 66
 
 
+console.log("====================================================");
+
+//조건문
+const score = 70;
+
+if (score >= 60) {
+  // 조건식이 true인 경우에 실행할 코드
+  console.log("합격");
+} else {
+  // 조건식이 false인 경우에 실행할 코드
+  console.log("불합격");
+}
+  console.log("if문 종료!");
