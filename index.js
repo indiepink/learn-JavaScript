@@ -162,8 +162,52 @@ if(0) {
 }
 
 const userInput = "";
-if(userInput) {
-  alert("입력해주셔서 감사합니다");
-}else {
-  alert("입력값을 작성해주세요!");
+// if(userInput) {
+//   alert("입력해주셔서 감사합니다");
+// }else {
+//   alert("입력값을 작성해주세요!");
+// }
+
+
+// Q1. 함수 (화살표 함수)
+// 문제: 다음 함수를 화살표 함수로 변환하세요.
+
+// 여기에 화살표 함수로 다시 작성하세요.
+const add2 = (a,b) => {return a + b;}
+
+console.log(add2(5, 3)); // 예상 결과: 8
+
+
+// Q2. 함수 (parameter 정의)
+// 문제: 두 개의 숫자를 입력받아 그 차이를 계산하는 함수를 화살표 함수로 작성하세요.
+// 여기에 두 개의 parameter를 가진 화살표 함수를 작성하세요.
+const minus = (num1, num2) => {
+  return num1 - num2;
 }
+
+// 함수 테스트
+console.log(minus(60, 20));// 예상 결과: 40
+
+
+// Q3. 함수 (argument를 사용한 함수 호출)
+// 문제: 다음 함수가 주어졌을 때, 이 함수를 호출하여 "안녕하세요, [이름]님. 당신의 나이는 [나이]세입니다."라는 메시지를 출력하는 코드를 작성하세요.
+const introduce = (name, age) => {
+  return '안녕하세요, ' + name + '님. 당신의 나이는 ' + age + '세입니다.';
+};
+
+// 여기에 함수를 호출하는 코드를 작성하세요.// 당신의 이름과 나이를 argument로 사용하세요.
+console.log(introduce("송주령", 50));// 예시 결과: "안녕하세요, 김철수님. 당신의 나이는 25세입니다."
+
+// 객체와 배열
+const daysOfWeek = ["월요일", "화요일","수요일", "목요일", "금요일","토요일", "일요일"];
+
+console.log(daysOfWeek);
+console.log("오늘의 요일: " + daysOfWeek[1]);
+
+const idol = ["장원영", "안유진", "리즈", "레이", "가을", "이서"];
+
+//미션: "안유진"을 뽑아와서 콘솔에 찍어보기
+console.log(idol[1]);
+
+//미션: 마지막 멤버 뽑아와서 콘솔에 찍어보기
+console.log(idol[(idol.length-1)]);
