@@ -18,7 +18,8 @@ console.log(idol[(idol.length-1)]);
 const person = {  
   name : "송주령",
   isMale : false,
-  mbti : "istj"
+  mbti : "istj",
+  favoriteFoods : ["떡볶이", "잡채","불고기", "제육볶음", "돈까스"]
   };
 
 console.log("🚀 ~ person:", person);
@@ -26,4 +27,5 @@ console.log("name:", person["name"]);
 console.log("남성여부:", person.isMale);
 console.log("MBTI:", person.mbti);
 
-  
+// "잡채"라는 값 뽑아오기
+console.log("두 번째로 좋아하는 음식:", person.favoriteFoods[1]);
